@@ -1,8 +1,8 @@
 @keyframes slideshow {
-  25% {
+  20% {
     opacity: 1;
   }
-  40% {
+  30% {
     opacity: 0;
   }
 }

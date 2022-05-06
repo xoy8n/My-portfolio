@@ -2,7 +2,7 @@
 
 // loader 보이기
 $(window).on("load", function () {
-  $("#loader_box").delay("9100").fadeOut(1000);
+  $("#loader_box").delay("9500").fadeOut(500);
 });
 
 //swiper.js(project 슬라이더)
