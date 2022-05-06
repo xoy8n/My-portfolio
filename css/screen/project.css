@@ -73,26 +73,6 @@
   align-items: center;
 }
 
-.swiper-slide:nth-child(1) .slide-img {
-  background-image: url("img/pc-youtube.png");
-}
-.swiper-slide:nth-child(2) .slide-img {
-  background-image: url("img/pc-universe.png");
-  object-fit: cover;
-}
-.swiper-slide:nth-child(3) .slide-img {
-  background-image: url("img/pc-kakao.png");
-}
-.swiper-slide:nth-child(4) .slide-img {
-  background-image: url("img/pc-saladish.png");
-}
-.swiper-slide:nth-child(5) .slide-img {
-  background-image: url("img/pc-seashore.png");
-}
-.swiper-slide:nth-child(6) .slide-img {
-  background-image: url("img/pc-iphone.png");
-}
-
 .slide-img {
   width: 100%;
   background-size: contain;
