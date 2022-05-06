@@ -1,0 +1,328 @@
+#contact {
+  width: 100%;
+  height: auto;
+  background-color: var(--background-color);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.contact-wrap {
+  width: 100%;
+  height: auto;
+  background-color: gray;
+  border-radius: 10% 10% 0 0;
+}
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact fieldset {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(25px);
+  transition: 1s;
+  max-height: 500px;
+  min-width: 600px;
+  transform: translateY(20%);
+}
+
+.contact fieldset .formlist {
+  padding: 30px;
+}
+.contact fieldset .formlist ul {
+  padding-bottom: 10px;
+}
+.contact fieldset .formlist ul li {
+  display: flex;
+  padding: 10px 0;
+}
+
+.contact fieldset .formlist ul li label {
+  display: block;
+  width: 140px;
+  font-size: 16px;
+  font-weight: bold;
+  word-break: keep-all;
+  line-height: 40px;
+  color: white;
+}
+
+.contact fieldset .formlist ul li .inputbox {
+  display: block;
+  width: calc(100% - 140px);
+}
+
+.contact fieldset .formlist ul li .inputbox input {
+  display: block;
+  width: 95%;
+  background: transparent;
+  line-height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  color: white;
+}
+::placeholder {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.contact fieldset .formlist ul li .inputbox textarea {
+  display: block;
+  width: 90%;
+  color: white;
+  border: 1px solid #ccc;
+  resize: none;
+  height: 150px;
+  background: transparent;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 12px;
+  font-family: "Poppins", sans-serif;
+}
+textarea:focus {
+  outline: none;
+}
+
+.contact fieldset .formlist .btn_box {
+  padding: 20px 0 0;
+  border-top: 1px solid #999;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment {
+  font-size: 15px;
+  color: white;
+  display: block;
+  padding: 15px 0;
+}
+
+.contact fieldset .formlist .btn_box button {
+  font-size: 15px;
+  background: linear-gradient(to right, #88f08a, #efc4cf, #e0f3d3);
+  background-size: 200%;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+.contact fieldset .formlist .btn_box button:hover {
+  background-position-x: 100%;
+}
+
+.contact fieldset .formlist .btn_box button:hover {
+  background-color: #dd7792;
+}
+
+.thankyou_message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.thankyou_message article {
+  position: absolute;
+  max-width: 500px;
+  min-width: 300px;
+  background-color: var(--text-color);
+  border-radius: 4px;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.thankyou_message article h1 {
+  color: #555;
+  font-size: 20px;
+  padding-bottom: 20px;
+  word-break: keep-all;
+}
+.thankyou_message article p {
+  font-size: 16px;
+  color: #777;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.thankyou_message article .btn_box {
+  padding-top: 20px;
+  text-align: right;
+}
+
+.thankyou_message article .btn_box .close {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/****************sns********************/
+.sns-box {
+  width: 100%;
+  height: auto;
+}
+.sns_box ul {
+  width: 100%;
+  margin: 50px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sns_box ul li {
+  margin: 0 40px;
+}
+.sns_box ul li a i {
+  font-size: 40px;
+  color: var(--background-color);
+  line-height: 80px;
+  transition: 0.5s;
+}
+.sns_box ul li a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: white;
+  text-align: center;
+  transform: rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sns_box ul li a::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background-color: #b1b1b1;
+  transition: 0.5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+.sns_box ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background-color: #b1b1b1;
+  transition: 0.5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+.sns_box ul li a:hover {
+  transform: rotate(-30deg) skew(25deg) translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+.sns_box ul li a:hover i {
+  color: var(--font-color);
+}
+
+footer {
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+footer p {
+  color: white;
+  font-size: 13px;
+  opacity: 0.8;
+}
+footer p:first-child {
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact fieldset {
+    transform: translateY(10%);
+    min-width: 500px;
+    min-height: 500px;
+  }
+  .contact fieldset .formlist {
+    padding: 30px;
+  }
+  .contact fieldset .formlist ul li {
+    flex-direction: column;
+    padding: 0;
+  }
+  .contact fieldset .formlist ul li .inputbox {
+    width: 100%;
+  }
+  .contact fieldset .formlist ul li .inputbox input {
+    font-size: 14px;
+  }
+  .contact fieldset .formlist ul li .inputbox textarea {
+    height: 100px;
+  }
+  #contactbox::before {
+    width: 150px;
+    height: 150px;
+    left: 10%;
+  }
+  #contactbox::after {
+    width: 180px;
+    height: 180px;
+    top: 70%;
+    left: 45%;
+  }
+  .contact fieldset .formlist .btn_box {
+    padding: 10px 0 0;
+    border-top: 1px solid var(--text-color);
+    flex-direction: column;
+    justify-content: none;
+  }
+  .comment {
+    font-size: 11px;
+    color: #fdd3de;
+    text-align: left;
+    padding: 0 0 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact fieldset {
+    transform: translateY(10%);
+    min-width: 300px;
+  }
+  .sns_box ul {
+    margin: 30px 0;
+  }
+  .sns_box ul li {
+    margin: 0 25px;
+  }
+  .sns_box ul li a {
+    width: 50px;
+    height: 50px;
+  }
+  .sns_box ul li a i {
+    font-size: 30px;
+    line-height: 55px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+}
+
+/*****************푸터******************/

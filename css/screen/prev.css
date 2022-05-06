@@ -1,0 +1,126 @@
+#loader_box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 1000;
+}
+
+/* background */
+/* 
+.background {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  animation: slideshow 90s forwards;
+  animation-delay: 0.5s;
+}
+
+.background-wave {
+  background: url("data:image/svg+xml,%0A%3Csvg width='1608' height='828' viewBox='0 0 1608 828' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Vector 2' filter='url(%23filter0_d_6_37)'%3E%3Cpath d='M4 810C854.104 810 555.148 10 854.104 10C1153.06 10 854.104 810 1604 810' stroke='%23CCFD0D' stroke-width='20' stroke-linejoin='bevel' stroke-dasharray='5 5'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_6_37' x='0' y='0' width='1608' height='828' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_6_37'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_6_37' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E")
+    repeat-x;
+  position: absolute;
+  top: 100px;
+  width: 10000px;
+  height: 828px;
+  animation: wave 10s linear forwards;
+  transform: translate3d(0, 0, 0);
+}
+.background-wave:nth-child(2) {
+  left: 50%;
+  opacity: 0.5;
+} */
+
+/* column */
+
+.column {
+  width: 100%;
+  height: 100vh;
+  /* position: relative; */
+  color: white;
+}
+.column-line {
+  width: 30%;
+  height: 20px;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 340px;
+  left: -160px;
+}
+.line {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  opacity: 0;
+  animation: grow 2s forwards;
+  animation-delay: 0.9s;
+}
+.column-bottom,
+.column-top {
+  position: absolute;
+  transform: rotate(-90deg);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  display: inline-block;
+}
+.column-bottom {
+  bottom: 40px;
+  left: 30px;
+}
+.column-top {
+  top: 60px;
+  left: 0;
+}
+
+/* slideshow */
+.slideshow {
+  width: 100%;
+  height: 100vh;
+}
+.slideshow-item {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-size: 160px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0;
+  animation: slideshow 10s infinite;
+}
+.filled,
+.filled-not {
+  display: block;
+}
+.filled-not {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+.slideshow-item__text {
+  display: flex;
+}
+
+.slideshow-item:nth-child(1) {
+  animation-delay: 0s;
+}
+.slideshow-item:nth-child(2) {
+  animation-delay: 3s;
+}
+.slideshow-item:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.slide-name {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+.first-name {
+  display: flex;
+}

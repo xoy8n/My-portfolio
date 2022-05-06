@@ -1,0 +1,76 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+@import "./reset.css";
+@import "./variable.css";
+
+/* components */
+@import "./components/header.css";
+@import "./components/arrow-up.css";
+@import "./components/animation.css";
+@import "./components/status-bar.css";
+
+/* screen */
+@import "./screen/prev.css";
+@import "./screen/home.css";
+@import "./screen/project.css";
+@import "./screen/about-me.css";
+@import "./screen/contact.css";
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  /* contain: style layout inline-size; */
+  background-color: gray;
+  position: relative;
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-white);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+
+/* Section common */
+.section {
+  /* padding: 0 50px; */
+  text-align: center;
+  margin: auto;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
+}

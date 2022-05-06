@@ -1,0 +1,56 @@
+.status-bar {
+  width: 100%;
+  height: 2.6rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+}
+
+.mac-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 5rem;
+  height: 1.3rem;
+  position: absolute;
+  top: 25%;
+  left: 10px;
+}
+
+.close,
+.minimize,
+.maximize {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.close {
+  background-color: var(--red);
+}
+
+.minimize {
+  background-color: var(--yellow);
+}
+
+.maximize {
+  background-color: var(--green);
+}
+
+@media screen and (max-width: 480px) {
+  .status-bar {
+    height: 1.5rem;
+  }
+  .mac-btn {
+    width: 3.5rem;
+    height: 1rem;
+  }
+  .close,
+  .minimize,
+  .maximize {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+}
