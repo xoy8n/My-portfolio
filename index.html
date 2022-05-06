@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="loader_box">
+    <!-- <div id="loader_box">
       <div class="background">
         <div class="background-wave"></div>
         <div class="background-wave"></div>
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Navbar -->
     <nav id="navbar">
@@ -122,7 +122,7 @@
       <div class="about-wrap">
         <!-- BG TEXT
           =============================== -->
-        <h5 class="main-name">about-me.</h5>
+        <h5 class="main-name top">about-me.</h5>
         <div class="marquee-wrap">
           <div class="marquee">
             <div>
@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="about-wrap-cover">
-          <div class="about-left">
+          <div class="about-left left">
             <div class="photo">
               <span class="typed"></span>
               <div class="photo-png">
@@ -142,7 +142,7 @@
               </div>
             </div>
           </div>
-          <div class="about-right">
+          <div class="about-right right">
             <div class="tab">
               <div class="status-bar">
                 <div class="mac-btn">
@@ -265,19 +265,19 @@
       <div class="bg-text">
         <h1>projects.</h1>
       </div>
-      <h5 class="main-name">projects.</h5>
+      <h5 class="main-name top">projects.</h5>
       <!-- SLIDER
   =============================== -->
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="slide-wrap">
-              <div class="slide-img">
+              <div class="slide-img left">
                 <div class="slide-text">
                   <h4><span>youtube</span></h4>
                 </div>
               </div>
-              <div class="slide-description">
+              <div class="slide-description right">
                 <div class="status-bar">
                   <div class="mac-btn">
                     <div class="close"></div>
@@ -612,8 +612,8 @@
     </section>
     <section id="contact">
       <div class="contact-wrap">
-        <h5 class="main-name">contact.</h5>
-        <div class="contact">
+        <h5 class="main-name top">contact.</h5>
+        <div class="contact left">
           <form
             class="gform form-elements"
             method="post"
@@ -667,15 +667,15 @@
             </fieldset>
           </form>
         </div>
-        <div class="sns_box">
+        <div class="sns_box bottom">
           <ul>
-            <li title="클릭시 인스타그램으로 이동합니다.">
+            <li title="클릭시 인스타그램으로 이동합니다." class="bottom1">
               <a href="https://www.instagram.com/xoy8n/"><i class="fab fa-instagram"></i></a>
             </li>
-            <li title="클릭시 이메일이 복사됩니다." onclick="copy()">
+            <li title="클릭시 이메일이 복사됩니다." onclick="copy()" class="bottom2">
               <a href="" onclick="return false;"><i class="fas fa-envelope"></i></a>
             </li>
-            <li title="클릭시 이력서가 다운로드 됩니다.">
+            <li title="클릭시 이력서가 다운로드 됩니다." class="bottom3">
               <a href="./img/이력서_설소윤.pdf" download="이력서_설소윤" onclick="return false;"><i class="fas fa-file-download"></i></a>
             </li>
           </ul>
@@ -698,6 +698,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <!-- swiper js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!--Scroll reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- form-submission-handler -->
     <script src="js/form-submission-handler.js"></script>
     <!-- typed.js -->

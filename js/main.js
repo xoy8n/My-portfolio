@@ -279,3 +279,50 @@ function copy() {
   copyToClipboard("s01057111917@gmail.com");
   alert("이메일이 복사되었습니다.");
 }
+
+//scroll reveal
+window.sr = ScrollReveal();
+
+sr.reveal(".left", {
+  origin: "left",
+  duration: 1000,
+  distance: "25rem",
+  delay: 100,
+});
+sr.reveal(".right", {
+  origin: "right",
+  duration: 1000,
+  distance: "25rem",
+  delay: 250,
+});
+sr.reveal(".top", {
+  origin: "top",
+  duration: 1000,
+  distance: "25rem",
+  delay: 150,
+});
+sr.reveal(".bottom", {
+  origin: "bottom",
+  duration: 1000,
+  distance: "10rem",
+  delay: 150,
+});
+
+sr.reveal(".bottom1", {
+  origin: "bottom",
+  duration: 1000,
+  distance: "10rem",
+  delay: 150,
+});
+sr.reveal(".bottom2", {
+  origin: "bottom",
+  duration: 1000,
+  distance: "10rem",
+  delay: 250,
+});
+sr.reveal(".bottom3", {
+  origin: "bottom",
+  duration: 1000,
+  distance: "10rem",
+  delay: 350,
+});
