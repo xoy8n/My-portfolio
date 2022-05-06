@@ -119,6 +119,25 @@
   animation-play-state: paused;
   filter: grayscale(1);
 }
+.photo-png {
+  margin-top: -30px;
+  margin-left: -25px;
+  width: 100%;
+  height: 100%;
+  animation: rotate 3s infinite;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  object-fit: cover;
+}
+
+.photo-png:hover {
+  margin-left: 0;
+  animation: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .photo-png:hover .dl a {
   display: block;
@@ -283,12 +302,6 @@
     flex-direction: column;
     background-color: gray;
   }
-  .photo {
-    transform: translateY(35%);
-    width: 180px;
-    height: 180px;
-    margin-top: 10px;
-  }
 
   .about-left,
   .about-right {
@@ -351,6 +364,46 @@
     top: 10px;
     left: 20px;
   }
+
+  .photo {
+    position: relative;
+    transform: translateY(35%);
+    width: 180px;
+    height: 180px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: linear-gradient(60deg, var(--font-color) 25%, gray 25%, white 50%, var(--font-color) 50%, var(--font-color) 75%, white 75%, white 100%);
+    background-size: 40px 40px;
+    animation: animateBg 1s linear infinite;
+    animation-play-state: running;
+    filter: grayscale(0);
+    z-index: 5;
+    transition: all 0.5s;
+  }
+
+  .photo:hover {
+    animation-play-state: paused;
+    filter: grayscale(1);
+  }
+  .photo-png {
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 180px;
+    height: 180px;
+    animation: rotate 3s infinite;
+  }
+
+  .photo-png:hover {
+    margin-left: 0;
+  }
+
+  .photo-png:hover .dl a {
+    display: block;
+    position: absolute;
+  }
+  .dl a {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -367,5 +420,14 @@
     width: 300px;
     height: 300px;
     margin-top: -20px;
+  }
+  .photo-png {
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 150px;
+    height: 150px;
+  }
+  .dl a {
+    font-size: 15px;
   }
 }
