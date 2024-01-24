@@ -1,9 +1,14 @@
 "use strict";
 
-// loader 보이기
-$(window).on("load", function () {
-  $("#loader_box").delay("9500").fadeOut(500);
-});
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    const loaderBox = document.getElementById("loader_box");
+    setTimeout(function () {
+      loaderBox.style.display = "none";
+    }, 500);
+  }, 9500);
+})
+
 
 //swiper.js(project 슬라이더)
 var slider = new Swiper(".swiper-container", {
@@ -71,7 +76,6 @@ slider.on("slideChangeTransitionEnd", function () {
     autoAlpha: 0,
   });
 });
-
 TweenMax.to(".swiper-slide-next .slide-text", 0, {
   autoAlpha: 0,
 });
@@ -94,6 +98,7 @@ TweenMax.to(".swiper-slide-active", 0, {
   scale: 1,
 });
 
+
 // 스크롤 원텍스트(home의 스크롤텍스트)
 let Scroll = document.querySelector("#scroll");
 let outterText = document.querySelector(".outterText");
@@ -102,8 +107,8 @@ let innerText = document.querySelector(".innerText");
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
   Scroll.style.clipPath = "circle(" + value + "px at center center)";
-  outterText.style.left = 100 - value / 5 + "%";
-  innerText.style.left = 100 - value / 5 + "%";
+  outterText.style.left = 100 - value / 7 + "%";
+  innerText.style.left = 100 - value / 7 + "%";
 });
 
 // navbar(navbar 높이 이상에서 border나오기)
@@ -234,9 +239,11 @@ window.addEventListener("wheel", () => {
 });
 
 //thankyou 메시지창 닫기
-$(".close").on("click", function () {
-  $(".thankyou_message").hide();
-});
+const closeBtn = document.querySelector('.btn_box > .close');
+closeBtn.addEventListener("click", () => {
+  const thkMsg = document.querySelector('.thankyou_message');
+  thkMsg.style.display = "none";
+})
 
 // 타이핑 모션
 
@@ -254,16 +261,17 @@ const typed = new Typed(".typed", {
 });
 
 //tab 메뉴
+const tabButtons = document.querySelectorAll('.tab-button__btn');
 
-for (let i = 0; i < $(".tab-button__btn").length; i++) {
-  $(".tab-button__btn")
-    .eq(i)
-    .click(function () {
-      $(".tab-button__btn").removeClass("act");
-      $(".tab-text__cnt").removeClass("show");
-      $(".tab-button__btn").eq(i).addClass("act");
-      $(".tab-text__cnt").eq(i).addClass("show");
-    });
+for (let i = 0; i < tabButtons.length; i++) {
+  tabButtons[i].addEventListener('click', function() {
+    for (let j = 0; j < tabButtons.length; j++) {
+      tabButtons[j].classList.remove('act');
+      document.querySelectorAll('.tab-text__cnt')[j].classList.remove('show');
+    }
+    tabButtons[i].classList.add('act');
+    document.querySelectorAll('.tab-text__cnt')[i].classList.add('show');
+  });
 }
 
 ///클릭시 이메일 복사
