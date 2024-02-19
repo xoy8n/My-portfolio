@@ -231,14 +231,21 @@
   display: none;
 }
 
-.show {
-  position: absolute;
-  left: 50px;
-  width: 100%;
+.tab-text__cnt.show{
+  width: calc(100% - 2rem);
   height: 100%;
   display: block;
   opacity: 0;
   animation: fadeIn 1s linear forwards;
+  overflow-y: scroll;
+  margin: 2rem;
+}
+.tab-text__cnt.show::-webkit-scrollbar {
+  display: none;
+}
+
+.show ul{
+  padding: 0.5rem 0 0 0.5rem;
 }
 
 .show ul li {
@@ -250,9 +257,8 @@
 .title {
   color: white;
   display: block;
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-top: 20px;
+  font-size: 22px;
+  margin-bottom: 20px;
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
     0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
