@@ -1,13 +1,13 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-    const loaderBox = document.getElementById("loader_box");
-    setTimeout(function () {
-      loaderBox.style.display = "none";
-    }, 500);
-  }, 9500);
-})
+// document.addEventListener("DOMContentLoaded", function () {
+//   setTimeout(function () {
+//     const loaderBox = document.getElementById("loader_box");
+//     setTimeout(function () {
+//       loaderBox.style.display = "none";
+//     }, 500);
+//   }, 9500);
+// })
 
 
 //swiper.js(project 슬라이더)
