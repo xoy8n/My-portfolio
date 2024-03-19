@@ -88,17 +88,17 @@ p {
 }
 
 .swiper-slide:nth-child(1) .slide-img {
-  background-image: url("../img/pc-youtube.png");
+  background-image: url("../img/pc-TDS-order-develop.png");
 }
 .swiper-slide:nth-child(2) .slide-img {
-  background-image: url("../img/pc-universe.png");
+  background-image: url("../img/pc-TW-myshop.png");
   object-fit: cover;
 }
 .swiper-slide:nth-child(3) .slide-img {
-  background-image: url("../img/pc-kakao.png");
+  background-image: url("../img/pc-TDS-seller-develop.png");
 }
 .swiper-slide:nth-child(4) .slide-img {
-  background-image: url("../img/pc-saladish.png");
+  background-image: url("../img/pc-TDS-eSIM-tab.png");
 }
 .swiper-slide:nth-child(5) .slide-img {
   background-image: url("../img/pc-seashore.png");
