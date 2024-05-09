@@ -1,21 +1,21 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-@import "./reset.scss";
-@import "./variable.scss";
+@import "./_reset.scss";
+@import "./_variable.scss";
 
 /* components */
-@import "./components/header.scss";
-@import "./components/arrow-up.scss";
-@import "./components/animation.scss";
-@import "./components/status-bar.scss";
+@import "./components/_header.scss";
+@import "./components/_arrow-up.scss";
+@import "./components/_animation.scss";
+@import "./components/_status-bar.scss";
 
 /* screen */
-@import "./screen/prev.scss";
-@import "./screen/home.scss";
-@import "./screen/project.scss";
-@import "./screen/about-me.scss";
-@import "./screen/contact.scss";
+@import "./screen/_prev.scss";
+@import "./screen/_home.scss";
+@import "./screen/_project.scss";
+@import "./screen/_about-me.scss";
+@import "./screen/_contact.scss";
 
 body {
   font-family: "Poppins", sans-serif;
